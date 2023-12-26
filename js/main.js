@@ -10,20 +10,49 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
+
+// Loading object
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-const cube = new THREE.Mesh(geometry, material);
-scene_one.add(cube);
+const cube_top_left = new THREE.Mesh(geometry, material);
+const cube_top_right = new THREE.Mesh(geometry, material);
+const cube_bottom_left = new THREE.Mesh(geometry, material);
+const cube_bottom_right = new THREE.Mesh(geometry, material);
+cube_top_left.position.x = -4;
+cube_top_left.position.y = 2;
+
+cube_top_right.position.x = 4;
+cube_top_right.position.y = 2;
+
+cube_bottom_left.position.x = -4;
+cube_bottom_left.position.y = -2;
+
+cube_bottom_right.position.x = 4;
+cube_bottom_right.position.y = -2;
+
+scene_one.add(cube_top_left, cube_bottom_left, cube_top_right, cube_bottom_right);
 
 camera.position.z = 5;
 
+
+// Def animation and render function
 function animate() {
     requestAnimationFrame(animate);
 
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    cube_top_left.rotation.x += 0.01;
+    cube_top_left.rotation.y += 0.01;
 
+    cube_top_right.rotation.x += 0.01;
+    cube_top_right.rotation.y += 0.01;
+
+    cube_bottom_left.rotation.x += 0.01;
+    cube_bottom_left.rotation.y += 0.01;
+
+    cube_bottom_right.rotation.x += 0.01;
+    cube_bottom_right.rotation.y += 0.01;
+    
     renderer.render(scene_one, camera);
 }
 
 animate();
+
