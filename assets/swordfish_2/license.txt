@@ -1,0 +1,11 @@
+Model Information:
+* title:	Swordfish 2
+* source:	https://sketchfab.com/3d-models/swordfish-2-15df20021f7f4133b75868ee00ea7207
+* author:	luisvillarruel (https://sketchfab.com/luisvillarruel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Swordfish 2" (https://sketchfab.com/3d-models/swordfish-2-15df20021f7f4133b75868ee00ea7207) by luisvillarruel (https://sketchfab.com/luisvillarruel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
